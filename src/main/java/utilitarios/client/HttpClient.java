@@ -56,8 +56,7 @@ public class HttpClient {
 	 * @param cls classe para conversao
 	 * @return response to string
 	 */
-	@SuppressWarnings("unchecked")
-	public <T> T get(String url, MediaType mediaType, Class<?> cls) {
+	public <T> T get(String url, MediaType mediaType, Class<T> cls) {
 		
 		try {
 			
@@ -101,8 +100,7 @@ public class HttpClient {
 	 * @param cls tipo de retorno
 	 * @return T
 	 */
-	@SuppressWarnings("unchecked")
-	public <T> T post(String url, MediaType mediaType, String content, Class<?> cls) {
+	public <T> T post(String url, MediaType mediaType, String content, Class<T> cls) {
 		
 		try {
 			
@@ -125,7 +123,7 @@ public class HttpClient {
 	 * @return T
 	 */
 	@SuppressWarnings("unchecked")
-	public <T> T put(String url, MediaType mediaType, String content, Class<?> cls) {
+	public <T> T put(String url, MediaType mediaType, String content, Class<T> cls) {
 		
 		try {
 			
